@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>簡易助手 Pro+</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>簡易助手 Pro+</h1>
+    <div class="buttons">
+      <button onclick="recordResult('B')">莊</button>
+      <button onclick="recordResult('P')">閒</button>
+      <button onclick="recordResult('T')">和</button>
+      <button onclick="resetAll()">重置</button>
+    </div>
+    <div class="stats">
+      <p>莊：<span id="banker-count">0</span></p>
+      <p>閒：<span id="player-count">0</span></p>
+      <p>和：<span id="tie-count">0</span></p>
+    </div>
+    <div class="recommendation">
+      <h2>下注建議：<span id="suggestion">請輸入資料</span></h2>
+      <p>勝率：<span id="winrate">--%</span></p>
+    </div>
+    <div>
+      <h3>預測正確率統計：</h3>
+      <p>正確：<span id="correct-count">0</span> / 錯誤：<span id="wrong-count">0</span></p>
+      <p>命中率：<span id="accuracy">--%</span></p>
+    </div>
+    <canvas id="roadmap" width="600" height="300"></canvas>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
